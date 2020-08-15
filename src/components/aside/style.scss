@@ -1,0 +1,106 @@
+.aside {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 50px 0 30px 0;
+    width: 30%;
+
+    @media(max-width: 600px) {
+        width: 100%;
+    }
+
+    &__defaultTitle {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        margin: 0 0 20px 0;
+        padding: 0 0 15px 0;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+
+        &::after {
+            background-color: #FFFFFF;
+            bottom: 0;
+            content: '';
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            transform: translateX(-50%);
+            width: 160px;
+        }
+    }
+
+    &__defaultText {
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        line-height: 25px;
+        padding: 0 70px;
+        text-align: center;
+
+        a {
+            color: #FFFFFF;
+        }
+    }
+
+    .avatar {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 0 0 30px 0;
+    }
+
+    .name {
+        border-bottom: 1px solid #FFFFFF;
+        margin: 0 20px 50px 20px;
+        padding: 0 50px 50px 50px;
+        text-align: center;
+
+        &__title {
+            font-size: 45px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+        }
+
+        &__subTitle {
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+    }
+
+    .contact {
+        margin: 40px 0;
+    }
+
+    .skills {
+        padding: 0 70px;
+
+        &__bar {
+            border: 1px solid #FFFFFF;
+            height: 20px;
+            margin: 10px 0 20px 0;
+            position: relative;
+            width: 100%;
+
+            div {
+                background-color: #FFFFFF;
+                left: 0;
+                height: 100%;
+                position: absolute;
+                top: 0;
+            }
+        }
+
+        p {
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+}
